@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Comfortaa;
+}
+
+pre {
+  font-family: Comfortaa;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  height: 100px
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 3000px;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  height: 10px
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #f1f1f1;
+  height: 3000px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h5>Cities</h5>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="openai.html">Open Ai</a></li>
+      <li><a href="gemini.html">Gemini Ai</a></li>
+      <li><a href="boston_dynamics.html">Boston Dynamics</a></li>
+      <li><a href="History.html">History</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Open Ai</h1>
+    <p>
+        The goal of Open AI is:"We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems. Building safe and beneficial AGI is our mission."
+    </p>
+    <p>
+        One of their most important product is Chat GPT. GPT-4 is its most advanced system, producing safer and more useful responses.
+        <blockquote cite="https://openai.com/gpt-4">
+        GPT-4 is more creative and collaborative than ever before. It can generate, edit, and iterate with users on creative and technical writing tasks, such as composing songs, writing screenplays, or learning a user’s writing style.
+        </blockquote>
+    </p>
+    <p>
+        Another important product is Dall-E.
+        <blockquote cite="https://openai.com/dall-e-3">
+        DALL·E 2 is an AI system that can create realistic images and art from a description in natural language.
+        </blockquote>
+    </p>
+
+    <div title="This is Open Ai">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJA5qDBQC5xopvAYykbAcajdXEtsV_m2lEdVgnVI3j&s"/>
+    </div>
+  </article>
+</section>
+
+<footer>
+  <p>Click here to contact the developers.</p>
+</footer>
+
+</body>
+</html>
